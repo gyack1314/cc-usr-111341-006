@@ -3,4 +3,4 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 COPY . .
-CMD ["python", "-m", "nowcast_data.cli", "data/normal.json"]
+CMD ["python", "-m", "nowcast_data.cli", "backtest", "data/realtime.json", "--draws", "200"]

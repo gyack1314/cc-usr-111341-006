@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "tables": {
+    "series": {
+      "file": "realtime-series.jsonl",
+      "sha256": "f74b153f048f6b05547a715bdb2d6e747a3cd368056deb4e320f7379532e411a",
+      "bytes": 430,
+      "rows": 5,
+      "fields": [
+        "id",
+        "frequency",
+        "aggregation",
+        "unit"
+      ]
+    },
+    "releases": {
+      "file": "realtime-releases.jsonl",
+      "sha256": "89cd3e689290cbdc8c5f97362f3f2177660f6f25bf76beba7fdfab3d0817723d",
+      "bytes": 127659,
+      "rows": 1046,
+      "fields": [
+        "id",
+        "series",
+        "period",
+        "released",
+        "revision",
+        "value"
+      ]
+    },
+    "decisions": {
+      "file": "realtime-decisions.jsonl",
+      "sha256": "4eb4aa1eb3d9a505958d23cef29541714efdd5a2c016c8b3e1125791a18f1316",
+      "bytes": 3276,
+      "rows": 52,
+      "fields": [
+        "id",
+        "day",
+        "target"
+      ]
+    }
+  }
+}

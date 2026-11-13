@@ -1,0 +1,5 @@
+{"aggregation": "flow", "frequency": "quarter", "id": "gdp", "unit": "million_CNY"}
+{"aggregation": "flow", "frequency": "month", "id": "ind_prod", "unit": "index_points"}
+{"aggregation": "stock", "frequency": "month", "id": "ind_stock", "unit": "million_CNY"}
+{"aggregation": "average", "frequency": "month", "id": "ind_price", "unit": "index"}
+{"aggregation": "flow", "frequency": "month", "id": "ind_orders", "unit": "orders"}

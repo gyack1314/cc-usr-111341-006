@@ -1,0 +1,982 @@
+{
+  "generated_from": "data/realtime.json",
+  "config": {
+    "full": "transform=auto;bridge=1;seasonal=1;rev=1;maturity=3;draws=400;seed=20261114",
+    "baseline": "transform=auto;bridge=0;seasonal=1;rev=1;maturity=3;draws=400;seed=20261114"
+  },
+  "spec": {
+    "criteria": {
+      "first_release": "revision==1",
+      "mature": "revision==3"
+    },
+    "visibility": "released <= decision_day",
+    "parameter_fit": "可见版本，fit_day = decision_day",
+    "interval_level": 0.8,
+    "skip_observed_target": true,
+    "models": [
+      "full",
+      "target_only"
+    ],
+    "maturity_revision": 3
+  },
+  "decisions_total": 52,
+  "metrics": {
+    "criterion": {
+      "first_release": {
+        "full": {
+          "n": 41,
+          "refused": 0,
+          "wide": 0,
+          "skipped_target_observed": 11,
+          "formal_n": 41,
+          "mae": 217.4715,
+          "rmse": 320.2066,
+          "bias": 65.3038,
+          "mape": 0.0132,
+          "median_relative": -0.0039,
+          "coverage": 0.9024,
+          "coverage_n": 41,
+          "avg_width": 684.8716,
+          "width_ratio_to_baseline": 0.8307
+        },
+        "target_only": {
+          "n": 41,
+          "refused": 0,
+          "wide": 0,
+          "skipped_target_observed": 11,
+          "formal_n": 41,
+          "mae": 382.6857,
+          "rmse": 527.4747,
+          "bias": 91.8432,
+          "mape": 0.0232,
+          "median_relative": -0.0049,
+          "coverage": 0.6829,
+          "coverage_n": 41,
+          "avg_width": 824.4119,
+          "width_ratio_to_baseline": 1.0
+        }
+      },
+      "mature": {
+        "full": {
+          "n": 37,
+          "refused": 0,
+          "wide": 0,
+          "skipped_target_observed": 11,
+          "formal_n": 41,
+          "mae": 76.0164,
+          "rmse": 93.7619,
+          "bias": 41.3864,
+          "mape": 0.0045,
+          "median_relative": 0.0035,
+          "coverage": 1.0,
+          "coverage_n": 37,
+          "avg_width": 553.293,
+          "width_ratio_to_baseline": 0.7933
+        },
+        "target_only": {
+          "n": 37,
+          "refused": 0,
+          "wide": 0,
+          "skipped_target_observed": 11,
+          "formal_n": 41,
+          "mae": 264.3098,
+          "rmse": 321.9486,
+          "bias": 49.7133,
+          "mape": 0.0157,
+          "median_relative": -0.0025,
+          "coverage": 0.7297,
+          "coverage_n": 37,
+          "avg_width": 697.4304,
+          "width_ratio_to_baseline": 1.0
+        }
+      }
+    },
+    "by_horizon": {
+      "first_release": {
+        "lead1-30": {
+          "full": {
+            "n": 12,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 0,
+            "formal_n": 12,
+            "mae": 270.164,
+            "rmse": 361.2148,
+            "bias": 56.7108,
+            "mape": 0.0163,
+            "median_relative": -0.0009,
+            "coverage": 0.9167,
+            "coverage_n": 12,
+            "avg_width": 744.8002,
+            "width_ratio_to_baseline": 0.8803
+          },
+          "target_only": {
+            "n": 12,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 0,
+            "formal_n": 12,
+            "mae": 411.4211,
+            "rmse": 558.8334,
+            "bias": 123.8831,
+            "mape": 0.025,
+            "median_relative": -0.0019,
+            "coverage": 0.6667,
+            "coverage_n": 12,
+            "avg_width": 846.0585,
+            "width_ratio_to_baseline": 1.0
+          }
+        },
+        "after0-30": {
+          "full": {
+            "n": 16,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 0,
+            "formal_n": 16,
+            "mae": 186.5874,
+            "rmse": 292.8812,
+            "bias": 63.3154,
+            "mape": 0.0113,
+            "median_relative": -0.0039,
+            "coverage": 0.9375,
+            "coverage_n": 16,
+            "avg_width": 671.2256,
+            "width_ratio_to_baseline": 0.824
+          },
+          "target_only": {
+            "n": 16,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 0,
+            "formal_n": 16,
+            "mae": 342.4646,
+            "rmse": 490.3254,
+            "bias": 63.4974,
+            "mape": 0.0208,
+            "median_relative": -0.0074,
+            "coverage": 0.6875,
+            "coverage_n": 16,
+            "avg_width": 814.6398,
+            "width_ratio_to_baseline": 1.0
+          }
+        },
+        "after31-60": {
+          "full": {
+            "n": 13,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 11,
+            "formal_n": 13,
+            "mae": 206.8436,
+            "rmse": 312.0208,
+            "bias": 75.6831,
+            "mape": 0.0126,
+            "median_relative": -0.0025,
+            "coverage": 0.8462,
+            "coverage_n": 13,
+            "avg_width": 646.3481,
+            "width_ratio_to_baseline": 0.7916
+          },
+          "target_only": {
+            "n": 13,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 11,
+            "formal_n": 13,
+            "mae": 405.6635,
+            "rmse": 541.5912,
+            "bias": 97.1551,
+            "mape": 0.0245,
+            "median_relative": -0.003,
+            "coverage": 0.6923,
+            "coverage_n": 13,
+            "avg_width": 816.4577,
+            "width_ratio_to_baseline": 1.0
+          }
+        }
+      },
+      "mature": {
+        "lead1-30": {
+          "full": {
+            "n": 11,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 0,
+            "formal_n": 12,
+            "mae": 95.2679,
+            "rmse": 119.9336,
+            "bias": 11.7358,
+            "mape": 0.0056,
+            "median_relative": 0.0007,
+            "coverage": 1.0,
+            "coverage_n": 11,
+            "avg_width": 613.0097,
+            "width_ratio_to_baseline": 0.8603
+          },
+          "target_only": {
+            "n": 11,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 0,
+            "formal_n": 12,
+            "mae": 287.2345,
+            "rmse": 337.3568,
+            "bias": 59.1052,
+            "mape": 0.017,
+            "median_relative": -0.0025,
+            "coverage": 0.7273,
+            "coverage_n": 11,
+            "avg_width": 712.5757,
+            "width_ratio_to_baseline": 1.0
+          }
+        },
+        "after0-30": {
+          "full": {
+            "n": 14,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 0,
+            "formal_n": 16,
+            "mae": 76.7733,
+            "rmse": 84.9595,
+            "bias": 64.9898,
+            "mape": 0.0046,
+            "median_relative": 0.0046,
+            "coverage": 1.0,
+            "coverage_n": 14,
+            "avg_width": 547.8144,
+            "width_ratio_to_baseline": 0.8135
+          },
+          "target_only": {
+            "n": 14,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 0,
+            "formal_n": 16,
+            "mae": 234.8604,
+            "rmse": 301.0391,
+            "bias": 38.8935,
+            "mape": 0.014,
+            "median_relative": -0.0025,
+            "coverage": 0.7857,
+            "coverage_n": 14,
+            "avg_width": 673.4318,
+            "width_ratio_to_baseline": 1.0
+          }
+        },
+        "after31-60": {
+          "full": {
+            "n": 12,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 11,
+            "formal_n": 13,
+            "mae": 57.4862,
+            "rmse": 74.1618,
+            "bias": 41.029,
+            "mape": 0.0034,
+            "median_relative": 0.0016,
+            "coverage": 1.0,
+            "coverage_n": 12,
+            "avg_width": 504.9442,
+            "width_ratio_to_baseline": 0.7096
+          },
+          "target_only": {
+            "n": 12,
+            "refused": 0,
+            "wide": 0,
+            "skipped_target_observed": 11,
+            "formal_n": 13,
+            "mae": 277.6531,
+            "rmse": 330.9626,
+            "bias": 53.7273,
+            "mape": 0.0165,
+            "median_relative": -0.0051,
+            "coverage": 0.6667,
+            "coverage_n": 12,
+            "avg_width": 711.5455,
+            "width_ratio_to_baseline": 1.0
+          }
+        }
+      }
+    },
+    "formal_only": {
+      "first_release": {
+        "full": {
+          "n": 41,
+          "refused": 0,
+          "wide": 0,
+          "skipped_target_observed": 0,
+          "formal_n": 41,
+          "mae": 217.4715,
+          "rmse": 320.2066,
+          "bias": 65.3038,
+          "mape": 0.0132,
+          "median_relative": -0.0039,
+          "coverage": 0.9024,
+          "coverage_n": 41,
+          "avg_width": 684.8716,
+          "width_ratio_to_baseline": null
+        },
+        "target_only": {
+          "n": 41,
+          "refused": 0,
+          "wide": 0,
+          "skipped_target_observed": 0,
+          "formal_n": 41,
+          "mae": 382.6857,
+          "rmse": 527.4747,
+          "bias": 91.8432,
+          "mape": 0.0232,
+          "median_relative": -0.0049,
+          "coverage": 0.6829,
+          "coverage_n": 41,
+          "avg_width": 824.4119,
+          "width_ratio_to_baseline": null
+        }
+      },
+      "mature": {
+        "full": {
+          "n": 37,
+          "refused": 0,
+          "wide": 0,
+          "skipped_target_observed": 0,
+          "formal_n": 41,
+          "mae": 76.0164,
+          "rmse": 93.7619,
+          "bias": 41.3864,
+          "mape": 0.0045,
+          "median_relative": 0.0035,
+          "coverage": 1.0,
+          "coverage_n": 37,
+          "avg_width": 553.293,
+          "width_ratio_to_baseline": null
+        },
+        "target_only": {
+          "n": 37,
+          "refused": 0,
+          "wide": 0,
+          "skipped_target_observed": 0,
+          "formal_n": 41,
+          "mae": 264.3098,
+          "rmse": 321.9486,
+          "bias": 49.7133,
+          "mape": 0.0157,
+          "median_relative": -0.0025,
+          "coverage": 0.7297,
+          "coverage_n": 37,
+          "avg_width": 697.4304,
+          "width_ratio_to_baseline": null
+        }
+      }
+    },
+    "notes": [
+      "正式估计口径（formal_only）只含 status=ok 的记录；宽区间与拒绝不计入覆盖率，但单独计数，避免用降级掩盖失败"
+    ]
+  },
+  "decompositions": [
+    {
+      "label": "期初未见 2 月资料；2 月发布后",
+      "from": "dec001",
+      "to": "dec002",
+      "status": "ok",
+      "point_from": 15906.6532,
+      "point_to": 16079.2308,
+      "total_change": 172.5776,
+      "contributions": {
+        "new_data": 134.5507,
+        "revisions": 37.8884,
+        "reestimate": 0.1384,
+        "target_version": 0.0
+      },
+      "residual": 0.0,
+      "sequential": {
+        "new_data": 158.9571,
+        "revisions": 13.0559,
+        "reestimate": 0.5646,
+        "target_version": 0.0
+      },
+      "sequential_residual": 0.0,
+      "interaction_max_abs": 51.3633,
+      "interaction_pairwise": {
+        "new_data*revisions": -51.3633,
+        "new_data*reestimate": 1.975,
+        "new_data*target_version": 0.0,
+        "revisions*reestimate": -2.2737,
+        "revisions*target_version": 0.0,
+        "reestimate*target_version": 0.0
+      },
+      "missing_scenarios": 0,
+      "new_releases": [
+        {
+          "series": "ind_orders",
+          "period": "2023-02",
+          "old": null,
+          "new": {
+            "release_id": "rel0859",
+            "revision": 1,
+            "released": "2023-03-25",
+            "value": 928.6985
+          }
+        },
+        {
+          "series": "ind_price",
+          "period": "2023-02",
+          "old": null,
+          "new": {
+            "release_id": "rel0607",
+            "revision": 1,
+            "released": "2023-03-25",
+            "value": 108.5647
+          }
+        },
+        {
+          "series": "ind_prod",
+          "period": "2023-02",
+          "old": null,
+          "new": {
+            "release_id": "rel0139",
+            "revision": 1,
+            "released": "2023-03-25",
+            "value": 12852.9827
+          }
+        },
+        {
+          "series": "ind_stock",
+          "period": "2023-02",
+          "old": null,
+          "new": {
+            "release_id": "rel0391",
+            "revision": 1,
+            "released": "2023-03-25",
+            "value": 240.3043
+          }
+        }
+      ],
+      "revised_releases": [
+        {
+          "series": "ind_orders",
+          "period": "2022-12",
+          "old": {
+            "release_id": "rel0854",
+            "revision": 2,
+            "released": "2023-02-27",
+            "value": 781.0216
+          },
+          "new": {
+            "release_id": "rel0855",
+            "revision": 3,
+            "released": "2023-04-03",
+            "value": 764.2126
+          }
+        },
+        {
+          "series": "ind_orders",
+          "period": "2023-01",
+          "old": {
+            "release_id": "rel0856",
+            "revision": 1,
+            "released": "2023-02-25",
+            "value": 762.2324
+          },
+          "new": {
+            "release_id": "rel0857",
+            "revision": 2,
+            "released": "2023-03-30",
+            "value": 808.2686
+          }
+        },
+        {
+          "series": "ind_price",
+          "period": "2023-01",
+          "old": {
+            "release_id": "rel0604",
+            "revision": 1,
+            "released": "2023-02-25",
+            "value": 107.5317
+          },
+          "new": {
+            "release_id": "rel0605",
+            "revision": 2,
+            "released": "2023-03-30",
+            "value": 107.9055
+          }
+        },
+        {
+          "series": "ind_prod",
+          "period": "2022-12",
+          "old": {
+            "release_id": "rel0134",
+            "revision": 2,
+            "released": "2023-02-27",
+            "value": 13020.3925
+          },
+          "new": {
+            "release_id": "rel0135",
+            "revision": 3,
+            "released": "2023-04-03",
+            "value": 12991.1607
+          }
+        },
+        {
+          "series": "ind_prod",
+          "period": "2023-01",
+          "old": {
+            "release_id": "rel0136",
+            "revision": 1,
+            "released": "2023-02-25",
+            "value": 12797.1661
+          },
+          "new": {
+            "release_id": "rel0137",
+            "revision": 2,
+            "released": "2023-03-30",
+            "value": 12808.8283
+          }
+        },
+        {
+          "series": "ind_stock",
+          "period": "2022-12",
+          "old": {
+            "release_id": "rel0386",
+            "revision": 2,
+            "released": "2023-02-27",
+            "value": 234.8829
+          },
+          "new": {
+            "release_id": "rel0387",
+            "revision": 3,
+            "released": "2023-04-03",
+            "value": 234.9956
+          }
+        },
+        {
+          "series": "ind_stock",
+          "period": "2023-01",
+          "old": {
+            "release_id": "rel0388",
+            "revision": 1,
+            "released": "2023-02-25",
+            "value": 236.0603
+          },
+          "new": {
+            "release_id": "rel0389",
+            "revision": 2,
+            "released": "2023-03-30",
+            "value": 236.6698
+          }
+        }
+      ],
+      "target_version_changes": []
+    },
+    {
+      "label": "2 月资料 + 1 月修订；3 月资料发布后",
+      "from": "dec002",
+      "to": "dec003",
+      "status": "ok",
+      "point_from": 16079.2308,
+      "point_to": 16102.7829,
+      "total_change": 23.5521,
+      "contributions": {
+        "new_data": 24.6144,
+        "revisions": -8.5088,
+        "reestimate": 4.1434,
+        "target_version": 3.3031
+      },
+      "residual": 0.0,
+      "sequential": {
+        "new_data": 22.0842,
+        "revisions": -6.9306,
+        "reestimate": 1.3363,
+        "target_version": 7.0622
+      },
+      "sequential_residual": 0.0,
+      "interaction_max_abs": 5.5953,
+      "interaction_pairwise": {
+        "new_data*revisions": 2.6768,
+        "new_data*reestimate": 2.2696,
+        "new_data*target_version": 0.0,
+        "revisions*reestimate": 0.0995,
+        "revisions*target_version": 0.0,
+        "reestimate*target_version": 5.5953
+      },
+      "missing_scenarios": 0,
+      "new_releases": [
+        {
+          "series": "ind_orders",
+          "period": "2023-03",
+          "old": null,
+          "new": {
+            "release_id": "rel0862",
+            "revision": 1,
+            "released": "2023-04-25",
+            "value": 893.4347
+          }
+        },
+        {
+          "series": "ind_price",
+          "period": "2023-03",
+          "old": null,
+          "new": {
+            "release_id": "rel0610",
+            "revision": 1,
+            "released": "2023-04-25",
+            "value": 108.3695
+          }
+        },
+        {
+          "series": "ind_prod",
+          "period": "2023-03",
+          "old": null,
+          "new": {
+            "release_id": "rel0142",
+            "revision": 1,
+            "released": "2023-04-25",
+            "value": 12648.8669
+          }
+        },
+        {
+          "series": "ind_stock",
+          "period": "2023-03",
+          "old": null,
+          "new": {
+            "release_id": "rel0394",
+            "revision": 1,
+            "released": "2023-04-25",
+            "value": 244.2144
+          }
+        }
+      ],
+      "revised_releases": [
+        {
+          "series": "ind_orders",
+          "period": "2023-02",
+          "old": {
+            "release_id": "rel0859",
+            "revision": 1,
+            "released": "2023-03-25",
+            "value": 928.6985
+          },
+          "new": {
+            "release_id": "rel0860",
+            "revision": 2,
+            "released": "2023-04-27",
+            "value": 920.7014
+          }
+        },
+        {
+          "series": "ind_price",
+          "period": "2023-02",
+          "old": {
+            "release_id": "rel0607",
+            "revision": 1,
+            "released": "2023-03-25",
+            "value": 108.5647
+          },
+          "new": {
+            "release_id": "rel0608",
+            "revision": 2,
+            "released": "2023-04-27",
+            "value": 108.4154
+          }
+        },
+        {
+          "series": "ind_prod",
+          "period": "2023-02",
+          "old": {
+            "release_id": "rel0139",
+            "revision": 1,
+            "released": "2023-03-25",
+            "value": 12852.9827
+          },
+          "new": {
+            "release_id": "rel0140",
+            "revision": 2,
+            "released": "2023-04-27",
+            "value": 12837.5464
+          }
+        },
+        {
+          "series": "ind_stock",
+          "period": "2023-02",
+          "old": {
+            "release_id": "rel0391",
+            "revision": 1,
+            "released": "2023-03-25",
+            "value": 240.3043
+          },
+          "new": {
+            "release_id": "rel0392",
+            "revision": 2,
+            "released": "2023-04-27",
+            "value": 240.4786
+          }
+        }
+      ],
+      "target_version_changes": [
+        {
+          "series": "gdp",
+          "period": "2022-Q4",
+          "old": {
+            "release_id": "rel1010",
+            "revision": 2,
+            "released": "2023-03-14",
+            "value": 16028.9224
+          },
+          "new": {
+            "release_id": "rel1011",
+            "revision": 3,
+            "released": "2023-04-18",
+            "value": 16016.4894
+          }
+        }
+      ]
+    },
+    {
+      "label": "3 月资料齐全；目标首次发布前",
+      "from": "dec003",
+      "to": "dec004",
+      "status": "ok",
+      "point_from": 16102.7829,
+      "point_to": 16143.7306,
+      "total_change": 40.9477,
+      "contributions": {
+        "new_data": 0.0,
+        "revisions": 4.5239,
+        "reestimate": 0.0075,
+        "target_version": 36.4162
+      },
+      "residual": 0.0,
+      "sequential": {
+        "new_data": 0.0,
+        "revisions": 9.0328,
+        "reestimate": 0.0452,
+        "target_version": 31.8697
+      },
+      "sequential_residual": 0.0,
+      "interaction_max_abs": 9.0328,
+      "interaction_pairwise": {
+        "new_data*revisions": 0.0,
+        "new_data*reestimate": 0.0,
+        "new_data*target_version": 0.0,
+        "revisions*reestimate": 0.0452,
+        "revisions*target_version": -9.0328,
+        "reestimate*target_version": 0.0
+      },
+      "missing_scenarios": 0,
+      "new_releases": [],
+      "revised_releases": [
+        {
+          "series": "ind_orders",
+          "period": "2023-01",
+          "old": {
+            "release_id": "rel0857",
+            "revision": 2,
+            "released": "2023-03-30",
+            "value": 808.2686
+          },
+          "new": {
+            "release_id": "rel0858",
+            "revision": 3,
+            "released": "2023-05-04",
+            "value": 833.0573
+          }
+        },
+        {
+          "series": "ind_price",
+          "period": "2023-01",
+          "old": {
+            "release_id": "rel0605",
+            "revision": 2,
+            "released": "2023-03-30",
+            "value": 107.9055
+          },
+          "new": {
+            "release_id": "rel0606",
+            "revision": 3,
+            "released": "2023-05-04",
+            "value": 108.1068
+          }
+        },
+        {
+          "series": "ind_prod",
+          "period": "2023-01",
+          "old": {
+            "release_id": "rel0137",
+            "revision": 2,
+            "released": "2023-03-30",
+            "value": 12808.8283
+          },
+          "new": {
+            "release_id": "rel0138",
+            "revision": 3,
+            "released": "2023-05-04",
+            "value": 12815.108
+          }
+        },
+        {
+          "series": "ind_stock",
+          "period": "2023-01",
+          "old": {
+            "release_id": "rel0389",
+            "revision": 2,
+            "released": "2023-03-30",
+            "value": 236.6698
+          },
+          "new": {
+            "release_id": "rel0390",
+            "revision": 3,
+            "released": "2023-05-04",
+            "value": 236.998
+          }
+        }
+      ],
+      "target_version_changes": [
+        {
+          "series": "gdp",
+          "period": "2023-Q1",
+          "old": null,
+          "new": {
+            "release_id": "rel1012",
+            "revision": 1,
+            "released": "2023-05-10",
+            "value": 16143.7306
+          }
+        }
+      ]
+    }
+  ],
+  "scenarios": {
+    "late_release": {
+      "case": "ind_prod 2023-05 延迟发布",
+      "first_release_date": "2023-08-14",
+      "decision_day": "2023-08-02",
+      "month_state": {
+        "2023-04": "observed",
+        "2023-05": "pending",
+        "2023-06": "observed"
+      },
+      "bridge_present": true,
+      "flags": [
+        "采用同比变换，季节影响由同比差分吸收"
+      ]
+    },
+    "large_revision": {
+      "case": "GDP 2024-Q3 首次发布偏低 6%",
+      "versions": [
+        {
+          "revision": 1,
+          "released": "2024-11-09",
+          "value": 15631.7027
+        },
+        {
+          "revision": 2,
+          "released": "2024-12-12",
+          "value": 16380.0289
+        },
+        {
+          "revision": 3,
+          "released": "2025-01-16",
+          "value": 16629.471
+        }
+      ],
+      "estimate_first_release": {
+        "point": 16596.5966,
+        "interval": [
+          16329.9137,
+          16824.7303
+        ],
+        "actual": 15631.7027,
+        "covered": false
+      },
+      "estimate_mature": {
+        "point": 16613.8694,
+        "interval": [
+          16414.3792,
+          16825.486
+        ],
+        "actual": 16629.471,
+        "covered": true
+      },
+      "revision_drift": 0.001,
+      "revision_sigma": 0.0088,
+      "revision_n": 22
+    },
+    "month_end_cross_quarter": {
+      "case": "2023-03 月度资料在 2023-04-25 发布",
+      "checks": [
+        {
+          "day": "2023-03-31",
+          "march_state": "pending",
+          "point": 16080.9488,
+          "status": "ok",
+          "interval": [
+            15768.1077,
+            16380.7865
+          ]
+        },
+        {
+          "day": "2023-04-01",
+          "march_state": "pending",
+          "point": 16080.9488,
+          "status": "ok",
+          "interval": [
+            15768.1077,
+            16380.7865
+          ]
+        },
+        {
+          "day": "2023-04-26",
+          "march_state": "observed",
+          "point": 16110.5319,
+          "status": "ok",
+          "interval": [
+            15819.5011,
+            16428.1618
+          ]
+        }
+      ]
+    },
+    "long_gap_column": {
+      "case": "ind_price 2022 全年无任何发布",
+      "decision_day": "2022-12-20",
+      "visible_months_2022": [],
+      "bridge_fitted": true,
+      "ar_fitted": true,
+      "bridge_component_present": false,
+      "notes": [
+        "ind_price 最新可见月份比目标季度末早 12 个月，超过缺口上限"
+      ]
+    },
+    "period_ended_not_published": {
+      "case": "2023-Q1 已于 3 月 31 日结束，决策日仍无任何目标发布",
+      "target_state": "pending",
+      "status": "ok",
+      "formal": true,
+      "months": {
+        "ind_prod": {
+          "2023-01": "observed",
+          "2023-02": "observed",
+          "2023-03": "pending"
+        },
+        "ind_stock": {
+          "2023-01": "observed",
+          "2023-02": "observed",
+          "2023-03": "pending"
+        },
+        "ind_price": {
+          "2023-01": "observed",
+          "2023-02": "observed",
+          "2023-03": "pending"
+        },
+        "ind_orders": {
+          "2023-01": "observed",
+          "2023-02": "observed",
+          "2023-03": "pending"
+        }
+      },
+      "point": 16080.9488
+    }
+  }
+}
