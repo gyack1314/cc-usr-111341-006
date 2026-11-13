@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "tables": {
+    "series": {
+      "file": "normal-series.jsonl",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bytes": 247,
+      "rows": 3,
+      "fields": [
+        "id",
+        "frequency",
+        "aggregation",
+        "unit"
+      ]
+    },
+    "releases": {
+      "file": "normal-releases.jsonl",
+      "sha256": "8cc1541d0bfa798b76dc023a1f33ee1c6e12bb9beb72edeab6b02d8ab80b013b",
+      "bytes": 425,
+      "rows": 4,
+      "fields": [
+        "id",
+        "series",
+        "period",
+        "released",
+        "revision",
+        "value"
+      ]
+    },
+    "decisions": {
+      "file": "normal-decisions.jsonl",
+      "sha256": "ebb25867c8e56f433bcbd4e99c76d10e88928b670a1fead92e8d6fd06841ac9a",
+      "bytes": 110,
+      "rows": 2,
+      "fields": [
+        "id",
+        "day",
+        "target"
+      ]
+    }
+  }
+}

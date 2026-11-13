@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "tables": {
+    "series": {
+      "file": "boundary-series.jsonl",
+      "sha256": "ec8504186e03e2b0f42968299b963c1d9533c7792e517a676dfcaf4baec92cd9",
+      "bytes": 247,
+      "rows": 3,
+      "fields": [
+        "id",
+        "frequency",
+        "aggregation",
+        "unit"
+      ]
+    },
+    "releases": {
+      "file": "boundary-releases.jsonl",
+      "sha256": "4cf353211c2d0f9e595c89d7110fdccb3faa9e1add7e2803b56e9d73522d8786",
+      "bytes": 426,
+      "rows": 4,
+      "fields": [
+        "id",
+        "series",
+        "period",
+        "released",
+        "revision",
+        "value"
+      ]
+    },
+    "decisions": {
+      "file": "boundary-decisions.jsonl",
+      "sha256": "ebb25867c8e56f433bcbd4e99c76d10e88928b670a1fead92e8d6fd06841ac9a",
+      "bytes": 110,
+      "rows": 2,
+      "fields": [
+        "id",
+        "day",
+        "target"
+      ]
+    }
+  }
+}

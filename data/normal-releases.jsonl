@@ -1,0 +1,4 @@
+{"id": "r1", "period": "2026-01", "released": "2026-02-10", "revision": 1, "series": "web", "value": 100}
+{"id": "r2", "period": "2026-01", "released": "2026-03-10", "revision": 2, "series": "web", "value": 120}
+{"id": "r3", "period": "2026-02", "released": "2026-03-15", "revision": 1, "series": "staff", "value": 40}
+{"id": "r4", "period": "2025-Q4", "released": "2026-02-01", "revision": 1, "series": "gdp", "value": 300}

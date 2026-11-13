@@ -1,0 +1,3 @@
+{"aggregation": "flow", "frequency": "month", "id": "web", "unit": "transactions"}
+{"aggregation": "stock", "frequency": "month", "id": "staff", "unit": "people"}
+{"aggregation": "flow", "frequency": "quarter", "id": "gdp", "unit": "million_CNY"}
